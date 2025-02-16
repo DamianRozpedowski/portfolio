@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaRegHeart, FaRegCommentDots } from 'react-icons/fa';
 import { TbShare } from "react-icons/tb";
+import profileImage from '../img/pic.jpg';
 
 const HomeContainer = ({ title, content }) => {
     return (
@@ -8,7 +9,7 @@ const HomeContainer = ({ title, content }) => {
             <div className="home-profile-section">
                 <div className="home-profile-image">
                     <img
-                        src="/public/pic.jpg"
+                        src={profileImage}
                         alt="Damian Rozpedowski"
                         className="profile-img"
                     />

@@ -1,4 +1,5 @@
 import React from 'react';
+import profileImage from '../img/pic.jpg';
 
 const Background = () => {
     return (
@@ -9,7 +10,7 @@ const Background = () => {
             ></div> {/* Background placeholder */}
             <div
                 className="profile-image"
-                style={{ backgroundImage: "url('/public/pic.jpg')" }}
+                style={{ backgroundImage: `url(${profileImage})` }}
             ></div> {/* Profile image */}
         </div>
     );
