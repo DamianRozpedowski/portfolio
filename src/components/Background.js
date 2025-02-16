@@ -9,7 +9,7 @@ const Background = () => {
             ></div> {/* Background placeholder */}
             <div
                 className="profile-image"
-                style={{ backgroundImage: "url({{process.env.PUBLIC_URL + '/pic.jpg'})" }}
+                style={{ backgroundImage: "url('/public/pic.jpg')" }}
             ></div> {/* Profile image */}
         </div>
     );

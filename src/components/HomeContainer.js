@@ -8,7 +8,7 @@ const HomeContainer = ({ title, content }) => {
             <div className="home-profile-section">
                 <div className="home-profile-image">
                     <img
-                        src={process.env.PUBLIC_URL + "/pic.jpg"}
+                        src="/public/pic.jpg"
                         alt="Damian Rozpedowski"
                         className="profile-img"
                     />
