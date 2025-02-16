@@ -68,9 +68,12 @@ h2 {
 
 p {
     line-height: 1.6;
-    color: #c5c6c7; /* Light grey for paragraphs */
+    color: #9698a4; /* Light grey for paragraphs */
 }
 
+li{
+    color: #9698a4;
+}
 
 
 
@@ -96,6 +99,7 @@ p {
 
 .hero p {
     margin: 0.2rem 0; /* Reduce the space between paragraphs */
+
 }
 
 
@@ -111,21 +115,26 @@ p {
 /* Background placeholder */
 .profile-image-bg {
     position: absolute;
-    top: -80px; /* Move the background upwards further */
+    top: -80px;
     left: 50%;
-    transform: translateX(-50%); /* Center the background */
-    width: 200%; /* Make the background fill the width of the container */
-    max-width: 900px; /* Match the max-width of the container */
-    height: 380px; /* Further increase the height for more space */
-    background-color: #2a2a2a; /* Dark gray background */
-    z-index: 0; /* Ensure background stays behind the profile image */
+    transform: translateX(-50%);
+    width: 200%;
+    max-width: 900px;
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
+
+
 
 /* Profile image */
 .profile-image {
     width: 100px; /* Profile image width */
     height: 100px; /* Profile image height */
-    background-color: #ffffff; /* White background for profile image */
+    background-size: cover; /* Ensure it covers the area */
+    background-position: center; /* Center the image */
     border-radius: 20%;
     position: absolute;
     bottom: -50px; /* Position the profile image lower to partially overlap the background */
@@ -133,6 +142,7 @@ p {
     transform: translateX(-400%); /* Center the profile image */
     z-index: 1; /* Ensure profile image stays above the background */
 }
+
 
 /* Hero content */
 .hero-content {
@@ -197,6 +207,7 @@ p {
     line-height: 1.6;
     border-bottom: 2px solid #17181c; /* Same color as inactive button */
     padding-bottom: 1rem;
+
 }
 
 /* Profile Image Section in Home */
@@ -210,10 +221,18 @@ p {
 .home-profile-image {
     width: 50px;
     height: 50px;
-    background-color: #ffffff; /* White placeholder */
     border-radius: 50%;
+    overflow: hidden; /* Ensures the image stays inside the circle */
     margin-right: 1rem;
 }
+
+.home-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle */
+    border-radius: 50%;
+}
+
 
 /* Profile details */
 .profile-details h3 {
@@ -224,10 +243,11 @@ p {
 
 .profile-details a {
     display: block;
-    color: #3e424b;
+    color: #484a4e;
     text-decoration: none;
     margin-top: 0.5rem;
     font-size: 1rem;
+
 }
 
 .profile-details a:hover {
@@ -320,13 +340,13 @@ p {
 
 /* Degree and Dates Styles */
 .degree {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 0; /* Remove bottom margin */
 }
 
 .dates {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 0; /* Remove bottom margin */
 }
 
@@ -337,23 +357,27 @@ p {
     margin-top: 0.2rem; /* Reduced margin to bring lines closer */
 }
 
+.details{
+    font-size: .9rem;
+}
 .school-name {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
+    color:#ffffff;
 }
 
 .location {
-    font-size: 1rem;
+    font-size: .8rem;
     margin-bottom: 0;
 }
 
 /* Coursework Section */
 .coursework {
-    margin-top: 1rem;
+    margin-top: .8rem;
 }
 
 .coursework h4 {
-    font-size: 1.1rem;
+    font-size: .8rem;
     font-weight: bold;
 }
 
@@ -363,6 +387,7 @@ p {
     flex-wrap: wrap;
     list-style-type: none;
     padding-left: 0;
+
 }
 
 .coursework li {
@@ -371,7 +396,7 @@ p {
     color: white;
     padding: 0.4rem 0.8rem;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 
@@ -382,7 +407,6 @@ p {
 
 /* Experience Section Styles */
 .experience {
-    margin-top: 3rem;
     color: white;
 }
 
@@ -418,7 +442,7 @@ p {
 }
 
 .dates {
-    color: #c5c6c7;
+    color: #9698a4;
     font-size: 1rem;
     margin-bottom: 0; /* No margin */
 }
@@ -432,13 +456,13 @@ p {
 }
 
 .company-name {
-    color: #c5c6c7;
-    font-size: 1rem;
+    color: #ffffff;
+    font-size: 1.2rem;
     margin-bottom: 0; /* No bottom margin */
 }
 
 .location {
-    color: #c5c6c7;
+    color: #9698a4;
     font-size: 1rem;
     margin-bottom: 0; /* No margin */
 }
@@ -448,9 +472,18 @@ p {
     margin: 1rem 0;
     list-style-type: disc;
     padding-left: 20px;
+
+}
+.responsibilities-title {
+    color: #ffffff;
+}
+
+.responsibilities-title{
+    font-size: 0.8rem;
 }
 
 .responsibilities li {
+    font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
@@ -460,7 +493,7 @@ p {
 }
 
 .tech-stack h4 {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -478,7 +511,7 @@ p {
     color: white;
     padding: 0.4rem 0.8rem;
     border-radius: 10px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 
@@ -518,6 +551,7 @@ footer p {
     margin: 0.5rem 0;
     font-size: 0.9rem;
     line-height: 2.5; /* Increased line-height for more gap between paragraphs */
+    color: #9698a4;
 }
 
 footer p:last-child {
